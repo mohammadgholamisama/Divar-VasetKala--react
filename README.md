@@ -27,11 +27,12 @@ https://vaset-kala.iran.liara.run
 - React
 
 ## Screenshot
-Desktop :
+### حالت دسکتاپ :
 
 ![app_screenshot](/public/screenshot.png)
 
 
-Mobile :
+
+### حالت موبایل :
 
 ![app_screenshot](/public/screenshot-mobile.png)

@@ -1,0 +1,30 @@
+.group-box__li a:hover {
+    background: #ddd;
+}
+
+.group-box__li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #F2F2F2;
+    border-radius: 5px;
+    width: 100px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.group-box__li a span {
+    margin-top: 10px;
+    color: #000;
+    font-size: 11px;
+}
+
+@media only screen and (max-width: 700px) {
+    .group-box__li a:hover {
+        background: #fff;
+    }
+    .group-box__li a:active {
+        background: #ddd;
+    }
+}

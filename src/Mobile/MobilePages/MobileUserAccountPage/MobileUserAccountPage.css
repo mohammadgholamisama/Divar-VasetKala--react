@@ -1,0 +1,47 @@
+.mobile-title-nav {
+    border-bottom: 1px solid #bbbbbb;
+    padding: 15px 10px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 3;
+}
+
+.mobile-account-page__info {
+    padding: 20px 15px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.mobile-account-page__info p {
+    font-size: 12px;
+    line-height: normal;
+}
+
+.mobile-account-page__info-logout {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.mobile-account-page__info-logout button {
+    border: 1px solid var(--main-color-red);
+    color: var(--main-color-red);
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mobile-account-page__info-logout button:active {
+    background-color: var(--main-color-red);
+    color: #fff;
+}
+
+.mobile-account-page__ul {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: #f3f3f3;
+}

@@ -1,0 +1,95 @@
+:root {
+    --main-color-green: #0AA660;
+    --main-color-red: #A62626;
+    --main-color-black: #2F2F2F;
+}
+
+@font-face {
+    font-family: "estedad";
+    src: url("assets/font/FD/Estedad-FD-Regular.woff2");
+}
+
+body {
+    font-family: "estedad" !important;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+input::placeholder {
+    font-family: "estedad";
+    user-select: none;
+}
+
+input {
+    font-family: "estedad";
+}
+
+select {
+    font-family: "estedad";
+}
+
+button {
+    font-family: "estedad";
+    user-select: none;
+}
+
+/* font bold class */
+.acv:active {
+    background-color: #ddd;
+}
+
+::selection {
+    background-color: #039252;
+    color: #fff;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+/* custom class */
+
+.site-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.dfb {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.cup {
+    cursor: pointer;
+}
+
+.text1 {
+    font-size: 12px;
+    line-height: normal;
+}
+
+
+@media only screen and (max-width: 720px) {
+    body {
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+    }
+}

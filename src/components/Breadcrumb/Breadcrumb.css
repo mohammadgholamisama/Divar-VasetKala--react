@@ -1,0 +1,26 @@
+.product-page__top-breadcrumb a {
+    color: #000;
+    font-size: 14px;
+}
+
+.product-page__top-breadcrumb a:after {
+    content: '/';
+    margin: 0 5px;
+}
+
+.product-page__top-breadcrumb a:last-child:after {
+    display: none;
+}
+
+@media only screen and (max-width : 700px) {
+    .product-page__top-breadcrumb-box {
+        flex-direction: column;
+        align-items: flex-start !important;
+        margin-bottom: 15px;
+    }
+
+    .product-page__top-id {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,35 @@
+.add-advertising-page-mobile-nav {
+    padding: 0 15px;
+}
+
+.add-advertising-page-mobile h1,
+.add-advertising-page-mobile__nav-groups {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add-advertising-page-mobile__nav-groups {
+    display: flex;
+    align-items: center;
+}
+
+.add-advertising-page-mobile__nav-groups .circle {
+    background-color: var(--main-color-green);
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+.add-advertising-page-mobile__title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

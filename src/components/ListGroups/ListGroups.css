@@ -1,0 +1,33 @@
+.lists-group {
+    position: sticky;
+    width: 180px;
+    height: 280px;
+    padding: 0 17px;
+    margin: 0;
+    top: 135px;
+    white-space: nowrap;
+}
+
+.lists-group h2 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #474747;
+    line-height: normal;
+}
+
+.lists-group ul li a {
+    display: block;
+    margin-top: 8px;
+    color: #858585;
+    line-height: normal;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.lists-group ul li a:hover {
+    color: var(--main-color-red);
+}
+
+.lists-group ul li a img {
+    margin-left: 11px;
+}

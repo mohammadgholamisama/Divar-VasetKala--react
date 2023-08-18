@@ -1,0 +1,7 @@
+.list-page {
+    position: relative;
+}
+
+.list-page__section {
+    display: flex;
+}

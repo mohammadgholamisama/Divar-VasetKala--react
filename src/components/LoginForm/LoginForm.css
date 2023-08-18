@@ -1,0 +1,126 @@
+.login-page__right-banner a {
+    font-size: 24px;
+    color: var(--main-color-green);
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+}
+
+.login-page__right-box {
+    width: 100%;
+    max-width: 340px;
+    min-width: 310px;
+    margin-top: 35px;
+}
+
+.login-email-form {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.login-page__right-box h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    line-height: normal;
+}
+
+.login-page__right-box p {
+    font-size: 13px;
+    color: #000;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.login-page__right-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-page__right-form input {
+    width: 100%;
+    max-width: 340px;
+    background: #F1F2F4;
+    border-radius: 5px;
+    border: none;
+    height: 42px;
+    padding: 0 10px;
+    direction: ltr;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.login-page__right-form input.unvalid {
+    background: #ffd1d1;
+}
+
+.login-page__right-form input:focus {
+    outline: 1px solid #000;
+}
+
+
+.login-page__right-form-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 340px;
+    margin-top: 30px;
+}
+
+.login-page__right-form-btns button {
+    width: 140px;
+    padding: 7px 0;
+    color: #fff;
+    background: var(--main-color-green);
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-page__right-form.pass .login-page__right-form-btns {
+    justify-content: flex-end;
+}
+
+.login-page__right-form-btns a {
+    width: 100px;
+    background-color: #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #000;
+}
+
+.login-page__right-rules {
+    margin-top: 50px;
+    font-size: 13px;
+}
+
+.login-password__forget-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.login-password__forget-box a {
+    color: #0071FF;
+    font-size: 14px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.login-password__forget-box a span {
+    margin-left: 7px;
+}
+
+.login-password__forget-box a svg {
+    font-size: 11px;
+}

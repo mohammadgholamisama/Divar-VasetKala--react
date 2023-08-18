@@ -1,0 +1,166 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 7px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: #fff;
+}
+
+.nav-bar__content {
+    padding: 0 15px;
+    width: 100%;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.nav-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-left__right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-left__left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar__banner {
+    margin-left: 25px;
+}
+
+.nav-bar__input-box {
+    position: relative;
+}
+
+.nav-bar-right input {
+    width: 298px;
+    height: 29px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #F1F2F4;
+    padding: 4px 9px;
+    font-size: 20px;
+}
+
+.nav-bar-right input::placeholder {
+    color: #BFBFBF;
+    font-size: 12px;
+}
+
+.nav-bar__input-btn {
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    bottom: 0;
+    margin: auto;
+    border: none;
+    font-size: 18px;
+    background-color: #a1a1a1;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.nav-bar__chat-icon {
+    position: relative;
+    padding-right: 10px;
+}
+
+.nav-bar__chat-icon.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main-color-red);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.nav-bar__chat-icon::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background: #D9D9D9;
+}
+
+.nav-bar__btn {
+    margin-left: 10px;
+    min-width: 97px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.nav-bar__btn svg {
+    margin-right: 5px;
+}
+
+.nav-bar__normal-btn {
+    color: #6B6B6B;
+}
+
+.nav-bar__add-btn {
+    background-color: var(--main-color-green);
+    color: #fff;
+}
+
+.nav-bar__content-buttom {
+    padding-top: 13px;
+    padding-bottom: 7px;
+}
+
+.nav-bar__bottom-text {
+    margin-right: 7px;
+}
+
+.nav-bar__group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar__citys__box {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-bar__content-top {
+        flex-direction: column;
+    }
+
+    .nav-bar-right {
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-bar-left {
+        justify-content: space-between;
+        width: 100%;
+    }
+}

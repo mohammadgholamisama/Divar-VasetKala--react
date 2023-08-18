@@ -1,0 +1,48 @@
+.mobile-bar__container {
+    margin-top: 80px;
+}
+
+.mobile-bar {
+    border: 1px solid #EBEBEB;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    user-select: none;
+}
+
+.mobile-bar__ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-bar__ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-bar__ul li a.active svg {
+    stroke: var(--main-color-green);
+    color: var(--main-color-green);
+}
+
+.mobile-bar__ul li a.active span {
+    color: var(--main-color-green);
+}
+
+.mobile-bar__ul li a svg {
+    stroke: #777777;
+    color: #777777;
+    font-size: 20px;
+}
+
+.mobile-bar__ul li a span {
+    font-size: 12px;
+    color: #626262;
+    margin-top: 10px;
+}

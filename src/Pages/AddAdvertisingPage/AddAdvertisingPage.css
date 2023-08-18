@@ -1,0 +1,122 @@
+.advertising-page {
+    display: flex;
+}
+
+/* level */
+.advertising-page__level {
+    width: 2px;
+    height: 500px;
+    margin-right: 30px;
+    margin-left: 180px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.advertising-page__level-circle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -10px;
+    white-space: nowrap;
+}
+
+.advertising-page__level-circle:nth-child(1) {
+    top: 150px;
+}
+
+.advertising-page__level-circle:nth-child(2) {
+    top: 195px;
+}
+
+.advertising-page__level-circle:nth-child(3) {
+    top: 240px;
+}
+
+.advertising-page__level-circle:nth-child(4) {
+    top: 285px;
+}
+
+.advertising-page__level-circle:nth-child(5) {
+    top: 330px;
+}
+
+.advertising-page__level-circle .circle {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #A6A6A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advertising-page__level-circle span {
+    font-size: 13px;
+    color: #9E9E9E;
+    margin-right: 5px;
+}
+
+/* active class */
+.advertising-page__level-circle.active {
+    right: -13px;
+}
+
+.advertising-page__level-circle.active span {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+
+
+}
+
+.advertising-page__level-circle.active .circle {
+    background-color: var(--main-color-green);
+    width: 30px;
+    height: 30px;
+}
+
+/* box */
+.advertising-page__box {
+    width: 100%;
+}
+
+.level-1 h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.level-1__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.level-1__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    width: 400px;
+}
+
+.level-1__ul li {
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .advertising-page__level{
+        display: none;
+    }
+    .level-1__ul{
+        width: 100%;
+    }
+}

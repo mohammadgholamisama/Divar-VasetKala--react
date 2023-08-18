@@ -1,0 +1,117 @@
+.login-page {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* left */
+
+.login-page__left {
+    width: 100%;
+    height: 100%;
+    max-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color-green);
+    position: relative;
+    transition: 0.4s;
+}
+
+.login-page__left-box {
+    margin-right: 40px;
+    transition: 0.5s;
+}
+
+.login-page__left-title {
+    line-height: normal;
+    font-size: 22px;
+    color: #FFF;
+    font-weight: 800;
+}
+
+.login-page__left-desk {
+    line-height: normal;
+    margin-top: 11px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+/* right */
+
+.login-page__right {
+    width: 100%;
+    height: 100%;
+    max-height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    flex-direction: column;
+    position: relative;
+}
+
+.login-page__left-angle {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #fff;
+    display: none;
+    transition: 0.7s;
+}
+
+@media only screen and (max-width:790px) {
+    .login-page {
+        flex-direction: column-reverse;
+    }
+
+    .login-page__right {
+        padding-top: 30px;
+        justify-content: flex-start;
+    }
+
+    .login-page__left {
+        height: 350px;
+    }
+
+    .login-page__left-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 10px;
+        width: 100%;
+    }
+
+    .login-page__left-title {
+        font-size: 19px;
+    }
+
+    .login-page__left-desk {
+        display: none;
+    }
+
+    .login-page__left-angle {
+        display: block;
+    }
+
+    .login-page__left.active .login-page__left-angle {
+        transform: rotate(180deg);
+    }
+
+    .login-page__left.active {
+        height: 40px;
+    }
+
+    .login-page__left.active .login-page__left-box {
+        opacity: 0;
+    }
+
+    .login-page__right-rules {
+        font-size: 12px !important;
+    }
+}

@@ -1,0 +1,25 @@
+.mobile-product-page {
+    padding: 0 10px;
+}
+
+.product-page__prev-div {
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.342);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.product-page__prev-div button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #474747;
+    cursor: pointer;
+}

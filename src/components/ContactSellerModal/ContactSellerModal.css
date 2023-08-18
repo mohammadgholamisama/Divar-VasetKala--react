@@ -1,0 +1,81 @@
+.product-page__contact-seller-container {
+    position: fixed;
+    background-color: #00000031;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-page__contact-seller-box {
+    width: 100%;
+    max-width: 400px;
+    height: 180px;
+    margin: 0 10px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #61616169;
+    overflow: hidden;
+}
+
+.product-page__contact-seller-item {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #474747;
+    line-height: normal;
+    font-weight: 600;
+}
+
+.product-page__contact-seller-item:last-child {
+    border-bottom: none;
+}
+
+.product-page__contact-seller-item button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.product-page__contact-seller-item button:hover {
+    color: var(--main-color-red);
+}
+
+.product-page__contact-modal-close {
+    font-size: 25px;
+    color: #6e6e6e;
+}
+
+.product-page__contact-seller-item-icon {
+    margin-left: 5px;
+}
+
+.product-page__contact-seller-item div {
+    display: flex;
+    align-items: center;
+    color: var(--main-color-green);
+}
+
+.product-page__contact-seller-item-number {
+    color: var(--main-color-green);
+    letter-spacing: 1px;
+}
+
+.product-page__contact-seller-item:not(:first-child):hover {
+    background-color: #f8f8f8;
+}
+
+a.product-page__contact-seller-item {
+    color: var(--main-color-red);
+}

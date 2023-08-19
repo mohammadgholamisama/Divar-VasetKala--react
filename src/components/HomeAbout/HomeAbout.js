@@ -11,36 +11,28 @@ export default function HomeAbout() {
             </p>
             <ul>
                 <li>
-                    <a href="#">
-                        <div>
-                            <img src="/images/home-page/icon4.svg" alt="icon" />
-                        </div>
-                        <span>جستجوی سریع</span>
-                    </a>
+                    <div>
+                        <img src="/images/home-page/icon4.svg" alt="icon" />
+                    </div>
+                    <span>جستجوی سریع</span>
                 </li>
                 <li>
-                    <a href="#">
-                        <div>
-                            <img src="/images/home-page/icon5.svg" alt="icon" />
-                        </div>
-                        <span>راحت</span>
-                    </a>
+                    <div>
+                        <img src="/images/home-page/icon5.svg" alt="icon" />
+                    </div>
+                    <span>راحت</span>
                 </li>
                 <li>
-                    <a href="#">
-                        <div>
-                            <img src="/images/home-page/icon6.svg" alt="icon" />
-                        </div>
-                        <span>به صرفه</span>
-                    </a>
+                    <div>
+                        <img src="/images/home-page/icon6.svg" alt="icon" />
+                    </div>
+                    <span>به صرفه</span>
                 </li>
                 <li>
-                    <a href="#">
-                        <div>
-                            <img src="/images/home-page/icon7.svg" alt="icon" />
-                        </div>
-                        <span>پرداخت امن</span>
-                    </a>
+                    <div>
+                        <img src="/images/home-page/icon7.svg" alt="icon" />
+                    </div>
+                    <span>پرداخت امن</span>
                 </li>
             </ul>
         </section>

@@ -98,7 +98,13 @@ const iranProvinces = [
             { id: 1, name: "تهران", link: "/list/tehran" },
             { id: 2, name: "ورامین", link: "/list/varamin" },
             { id: 3, name: "پاکدشت", link: "/list/pakdasht" },
-            { id: 4, name: "ری", link: "/list/rey" },
+            { id: 4, name: "اندیشه", link: "/list/andishe" },
+            { id: 5, name: "شهریار", link: "/list/shahriar" },
+            { id: 6, name: "پاسداران", link: "/list/pasdaran" },
+            { id: 7, name: "تجریش", link: "/list/tajrish" },
+            { id: 8, name: "چیتگر", link: "/list/chitgar" },
+            { id: 9, name: "صادقیه", link: "/list/sadeghie" },
+            { id: 8, name: "زعفرانیه", link: "/list/zaferanie" },
         ]
     },
     {

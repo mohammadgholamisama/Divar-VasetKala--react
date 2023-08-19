@@ -46,7 +46,7 @@ export default function LIstProductsContainer() {
         }
 
         setListItems(filteredItems.slice(0, itemsPerPage)); // نمایش اولین صفحه (30 تای اول)
-        setTimeout(() => setLoadingBox(false), 700);
+        setTimeout(() => setLoadingBox(false), 600);
     }, [params.listName, contextSite.locationName, contextSite.navbarSearchValue]);
 
 

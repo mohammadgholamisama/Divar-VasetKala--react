@@ -4,6 +4,7 @@ import MobileNavbar from '../../MobileComponents/MobileNavbar/MobileNavbar'
 import groups from '../../../assets/fakeData/groups'
 import { LiaAngleLeftSolid } from 'react-icons/lia'
 import MobileBar from '../../MobileComponents/MobileBar/MobileBar'
+import { Link } from 'react-router-dom'
 
 export default function HomeMobile() {
   return (
@@ -22,7 +23,7 @@ export default function HomeMobile() {
         <div className='mobile_home-page__groups'>
           <div className='mobile_home-page__groups-nav dfb'>
             <span>از دسته بندی های واسط کالا انتخاب کن</span>
-            <a href="#">همه دسته بندی ها <LiaAngleLeftSolid /></a>
+            <Link to='/groups'>همه دسته بندی ها <LiaAngleLeftSolid /></Link>
           </div>
           <ul className='mobile_home-page__groups-ul'>
             {groups.map(item => (

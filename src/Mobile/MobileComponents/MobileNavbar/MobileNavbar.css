@@ -8,6 +8,7 @@
     background-color: #fff;
     z-index: 99;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .mobile-navbar form {
@@ -23,6 +24,18 @@
     outline: none;
     height: 41px;
     padding: 0 15px;
+}
+
+.mobile-navbar__input-value {
+    position: absolute;
+    background-color: #ddd;
+    padding: 15px 10px;
+    left: 15px;
+    right: 15px;
+    top: 56px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
 }
 
 .mobile-navbar__input::placeholder {
@@ -47,4 +60,12 @@
 .mobile-navbar__btn-text {
     margin-right: 3px;
     font-size: 11px;
+}
+
+.mobile-navbar.active .mobile-navbar__input {
+    border-bottom-right-radius: 0;
+}
+
+.mobile-navbar.active .mobile-navbar__btn {
+    border-bottom-left-radius: 0;
 }

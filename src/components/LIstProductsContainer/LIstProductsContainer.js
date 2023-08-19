@@ -4,16 +4,21 @@ import { context } from '../../context/context';
 import { Link, useParams } from 'react-router-dom';
 import productList from '../../assets/fakeData/products';
 import ListItemBox from '../ListItemBox/ListItemBox';
+import { Skeleton } from '@mui/material';
 
 export default function LIstProductsContainer() {
     const contextSite = useContext(context);
     const params = useParams();
-    const itemsPerPage = 30; // تعداد محصولات نمایش داده شده در هر صفحه
+    const itemsPerPage = 30; // تعداد نمایش اولیه محصولات قبل از اسکرول
     const [listItems, setListItems] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
+    const [noItemsFound, setNoItemsFound] = useState(false);
+    const [loadingBox, setLoadingBox] = useState(true);
 
+    // Find Products
     useEffect(() => {
         let filteredItems = [];
+        setLoadingBox(true)
 
         if (contextSite.locationName === 'all' || params.listName === 'all') {
             if (params.listName !== 'all') {
@@ -41,11 +46,19 @@ export default function LIstProductsContainer() {
         }
 
         setListItems(filteredItems.slice(0, itemsPerPage)); // نمایش اولین صفحه (30 تای اول)
+        setTimeout(() => setLoadingBox(false), 700);
     }, [params.listName, contextSite.locationName, contextSite.navbarSearchValue]);
 
+
+    // is Find Products ?
+    useEffect(() => {
+        listItems.length < 1 ? setNoItemsFound(true) : setNoItemsFound(false)
+    }, [listItems])
+
+
+    // Filter Products
     const selectFilterHandler = (val) => {
         let sortedItems = [...listItems];
-
         if (val === "low") {
             sortedItems.sort((a, b) => a.price - b.price);
         } else if (val === "high") {
@@ -57,9 +70,9 @@ export default function LIstProductsContainer() {
         setListItems(sortedItems);
     };
 
+    // Scroll Load Products
     const handleScroll = () => {
         if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-            // اگر به پایین صفحه رسیده‌ایم
             const nextPageStartIndex = currentPage * itemsPerPage;
             const nextPageEndIndex = nextPageStartIndex + itemsPerPage;
             const nextPageItems = productList.slice(nextPageStartIndex, nextPageEndIndex);
@@ -74,6 +87,7 @@ export default function LIstProductsContainer() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [currentPage]);
 
+    
     const showAllProducts = () => {
         contextSite.setNavbarSearchValue('')
     }
@@ -83,7 +97,7 @@ export default function LIstProductsContainer() {
             <div className="list-page__section-list">
                 <div className="list-page__section-list-nav dfb">
                     <div className="list-page__section-list-nav-right">
-
+                        {/* loading */}
                         {!contextSite.navbarSearchValue ? <span>همه اگهی ها</span> : contextSite.navbarSearchValue && (
                             <>
                                 <Link to={contextSite.locationName.link} onClick={showAllProducts}>همه آگهی ها</Link>
@@ -104,16 +118,27 @@ export default function LIstProductsContainer() {
 
                 {/* list items */}
                 <section className='list-page__items-box'>
-                    {listItems.map(item => (
+                    {loadingBox && Array.from({ length: itemsPerPage }).map((_, index) => (
+                        <Skeleton
+                            className='list-page__item-link'
+                            sx={{ bgcolor: 'grey.400' }}
+                            variant="rectangular"
+                            width={280}
+                            height={99}
+                            key={index}
+                        />
+                    ))}
+                    {/* list */}
+                    {!loadingBox && listItems && listItems.map(item => (
                         <ListItemBox title={item.title} price={item.price} time={item.time} img={item.imgArray[0]} id={item.id} key={item.id} />
                     ))}
                 </section>
-                    {listItems.length === 0 && (
-                        <div className='list-page__items-undefained'>
-                            <img src="/images/icon.png" alt="icon" />
-                            <p>کالایی پیدا نشده است</p>
-                        </div>
-                    )}
+                {!loadingBox && noItemsFound && (
+                    <div className='list-page__items-undefained'>
+                        <img src="/images/icon.png" alt="icon" />
+                        <p>کالایی پیدا نشده است</p>
+                    </div>
+                )}
             </div>
         </>
     )

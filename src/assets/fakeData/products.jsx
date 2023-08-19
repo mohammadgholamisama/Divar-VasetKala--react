@@ -115,7 +115,7 @@ const productList = [
   },
   {
     id: 4,
-    title: "موبایل اپل ایفون ۱۳",
+    title: "گوشی موبایل اپل ایفون 13",
     price: 34_500_000,
     state: "isfahan",
     city: "fuladshahr",
@@ -160,7 +160,7 @@ const productList = [
     time: "12 ساعت پیش",
     group: "املاک",
     groupTitle: "فروش مسکونی",
-    desk: `#۱۳۵۰۰
+    desk: `#13۵۰۰
     ٢٦٥ متر زمین
     ١٣٠ متر بنا
     سند تکبرگ
@@ -369,12 +369,12 @@ const productList = [
   },
   {
     id: 11,
-    title: "اپل ایفون ۱۳ دو هفته خریدم ۱۲۸ گیگ",
+    title: "گوشی ایفون 13 دو هفته خریدم ۱۲۸ گیگ",
     price: 39_000_000,
-    state: "gilan",
-    city: "rasht",
-    presianState: "گیلان",
-    presianCity: "لاهیجان",
+    state: "tehran",
+    city: "andishe",
+    presianState: "تهران",
+    presianCity: "اندیشه",
     time: "دقایقی پیش",
     group: "کالای دیجیتال",
     groupTitle: "موبایل و تبلت",
@@ -399,8 +399,8 @@ const productList = [
       { id: 2, title: "وضعیت", text: "در حد نو" },
       { id: 3, title: "اصالت برند", text: "اصل" },
       { id: 4, title: "تعداد سیم‌کارت", text: "تک سیم" },
-      { id: 5, title: "حافظهٔ داخلی", text: "128 گیگابایت" },
-      { id: 6, title: "مقدار رم", text: "4 گیگابایت" },
+      { id: 5, title: "حافظهٔ داخلی", text: "256 گیگابایت" },
+      { id: 6, title: "مقدار رم", text: "6 گیگابایت" },
     ],
   },
   {
@@ -414,7 +414,7 @@ const productList = [
     time: "دقایقی پیش",
     group: "املاک",
     groupTitle: "فروش مسکونی",
-    desk: `#۱۳۵۰۰
+    desk: `#13۵۰۰
     ٢٦٥ متر زمین
     ١٣٠ متر بنا
     سند تکبرگ
@@ -623,7 +623,7 @@ const productList = [
   },
   {
     id: 18,
-    title: "اپل ایفون ۱۳ دو هفته خریدم ۱۲۸ گیگ",
+    title: "اپل ایفون 13 دو هفته خریدم ۱۲۸ گیگ",
     price: 39_000_000,
     state: "gilan",
     city: "rasht",
@@ -668,7 +668,7 @@ const productList = [
     time: "دقایقی پیش",
     group: "املاک",
     groupTitle: "فروش مسکونی",
-    desk: `#۱۳۵۰۰
+    desk: `#13۵۰۰
     ٢٦٥ متر زمین
     ١٣٠ متر بنا
     سند تکبرگ
@@ -877,7 +877,7 @@ const productList = [
   },
   {
     id: 25,
-    title: "اپل ایفون ۱۳ دو هفته خریدم ۱۲۸ گیگ",
+    title: "اپل ایفون 13 دو هفته خریدم ۱۲۸ گیگ",
     price: 39_000_000,
     state: "gilan",
     city: "rasht",
@@ -922,7 +922,7 @@ const productList = [
     time: "دقایقی پیش",
     group: "املاک",
     groupTitle: "فروش مسکونی",
-    desk: `#۱۳۵۰۰
+    desk: `#13۵۰۰
     ٢٦٥ متر زمین
     ١٣٠ متر بنا
     سند تکبرگ
@@ -1131,7 +1131,7 @@ const productList = [
   },
   {
     id: 32,
-    title: "اپل ایفون ۱۳ دو هفته خریدم ۱۲۸ گیگ",
+    title: "اپل ایفون 13 دو هفته خریدم ۱۲۸ گیگ",
     price: 39_000_000,
     state: "gilan",
     city: "rasht",
@@ -1176,7 +1176,7 @@ const productList = [
     time: "دقایقی پیش",
     group: "املاک",
     groupTitle: "فروش مسکونی",
-    desk: `#۱۳۵۰۰
+    desk: `#13۵۰۰
     ٢٦٥ متر زمین
     ١٣٠ متر بنا
     سند تکبرگ
@@ -1308,7 +1308,7 @@ const productList = [
   },
   {
     id: 38,
-    title: "اپل ایفون ۱۳ دو هفته خریدم ۱۲۸ گیگ",
+    title: "اپل ایفون 13 دو هفته خریدم ۱۲۸ گیگ",
     price: 39_000_000,
     state: "gilan",
     city: "rasht",
@@ -1353,7 +1353,7 @@ const productList = [
     time: "دقایقی پیش",
     group: "املاک",
     groupTitle: "فروش مسکونی",
-    desk: `#۱۳۵۰۰
+    desk: `#13۵۰۰
     ٢٦٥ متر زمین
     ١٣٠ متر بنا
     سند تکبرگ
@@ -1565,7 +1565,7 @@ const productList = [
     time: "دقایقی پیش",
     group: "املاک",
     groupTitle: "فروش مسکونی",
-    desk: `#۱۳۵۰۰
+    desk: `#13۵۰۰
     ٢٦٥ متر زمین
     ١٣٠ متر بنا
     سند تکبرگ

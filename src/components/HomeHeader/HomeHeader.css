@@ -58,7 +58,7 @@
 }
 
 .home-page-header-right__desk {
-    margin-top: 67px;
+    margin-top: 40px;
     color: #515151;
     font-size: 12px;
     line-height: normal;
@@ -139,9 +139,10 @@
 .home-page-header-left__top span {
     display: block;
     color: #6B6B6B;
-    font-size: 12px;
+    font-size: 13px;
     line-height: normal;
-    margin-top: 15px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .home-page-header-left__top-citys ul {

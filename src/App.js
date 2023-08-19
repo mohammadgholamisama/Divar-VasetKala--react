@@ -12,11 +12,11 @@ function App() {
   // State`s
   const [fontLoaded, setFontLoaded] = useState(false);
   const [navbarSearchValue, setNavbarSearchValue] = useState('')
+  const [userInfoNotEmpty, setUserInfoNotEmpty] = useState(false) // user Login Handler
   const [userInfo, setUserInfo] = useState(() => {
     const userValue = localStorage.getItem('login');
     return userValue ? JSON.parse(userValue) : {};
   });
-  const [userInfoNotEmpty, setUserInfoNotEmpty] = useState(false) // user Login Handler
   const [locationName, setLocationName] = useState(() => {
     const localState = JSON.parse(localStorage.getItem('state'))
     return localState
@@ -57,9 +57,9 @@ function App() {
       userInfo,
       setUserInfo
     }} >
-      <>
-        {fontLoaded && routerContainer}
-      </>
+
+      {fontLoaded && routerContainer}
+
     </context.Provider>
   );
 }

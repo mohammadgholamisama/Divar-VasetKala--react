@@ -30,7 +30,7 @@ export default function MobileNavbar() {
     return (
         <>
             <LocationModal open={openLocationModal} setOpen={setOpenLocationModal} />
-            <nav className='mobile-navbar'>
+            <nav className={searchValue ? 'mobile-navbar active' : 'mobile-navbar'}>
                 <form onSubmit={e => handleSearchClick(e)}>
                     <input className='mobile-navbar__input' type="text" name="search" placeholder='جستجو در واسط کالا' value={searchValue} onChange={e => setSearchValue(e.target.value)} />
                 </form>
@@ -38,6 +38,11 @@ export default function MobileNavbar() {
                     <HiOutlineLocationMarker className='mobile-navbar__btn-icon' />
                     <span className='mobile-navbar__btn-text'>{contextSite.locationName.name ? contextSite.locationName.name : contextSite.locationName === 'all' ? 'تمام استان ها' : 'لطفا شهر خود را انتخاب کنید'}</span>
                 </button>
+                {searchValue && (
+                    <div className='mobile-navbar__input-value' onClick={handleSearch}>
+                        <p>{searchValue}</p>
+                    </div>
+                )}
             </nav>
         </>
     )

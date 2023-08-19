@@ -46,7 +46,7 @@
     position: relative;
 }
 
-.nav-bar-right input {
+.nav-bar__input-box input {
     width: 298px;
     height: 29px;
     outline: none;
@@ -57,26 +57,26 @@
     font-size: 20px;
 }
 
-.nav-bar-right input::placeholder {
+.nav-bar__input-box.active input {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.nav-bar__input-box input::placeholder {
     color: #BFBFBF;
     font-size: 12px;
 }
 
-.nav-bar__input-btn {
-    width: 40px;
+.nav-bar__input-box-value {
     position: absolute;
+    background-color: #ddd;
     left: 0;
-    top: 1px;
-    bottom: 0;
-    margin: auto;
-    border: none;
-    font-size: 18px;
-    background-color: #a1a1a1;
-    color: #fff;
-    border-top-left-radius: 5px;
+    right: 0;
+    padding: 10px 10px;
+    z-index: 2;
+    border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     cursor: pointer;
-    padding-top: 5px;
 }
 
 .nav-bar__chat-icon {

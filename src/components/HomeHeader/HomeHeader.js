@@ -95,7 +95,7 @@ export default function HomeHeader() {
                     <a href='#' className='home-page-header-left__bottom-all-link'><span>همه دسته بندی ها</span> <LiaAngleLeftSolid /></a>
                     <ul>
                         {/* States Lists */}
-                        {groups.map((item, index) => (
+                        {groups.slice(0,3).map((item) => (
                             <GroupBox title={item.title} img={item.img} key={item.id} />
                         ))}
                     </ul>

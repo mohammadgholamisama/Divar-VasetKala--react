@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './SubMenuNavbar.css';
 import { LiaAngleLeftSolid } from 'react-icons/lia';
 import menus from '../../assets/fakeData/subMenu';
 import { Link } from 'react-router-dom';
+import { context } from '../../context/context'
 
 export default function SubMenuNavbar({ open, setOpen }) {
-
+    const contextSite = useContext(context)
     const [activeItemId, setActiveItemId] = useState(1);
 
     const handleItemHover = (id) => {
         setActiveItemId(id - 1);
     };
 
-
     return (
         <>
             <div className={open ? 'nav-bar__group-sub active' : 'nav-bar__group-sub'} >
                 <div className="nav-bar__group-sub-menu" onClick={() => setOpen(prev => !prev)}>
                     <div className="nav-bar__group-sub-menu-list">
-                        <Link to="/list/all" className="nav-bar__group-sub-menu-all">
+                        <Link to={contextSite.locationName === 'all' ? '/list/all' : contextSite.locationName.link} className="nav-bar__group-sub-menu-all">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.75 3.06043L11.64 7.95043C12.2175 8.52793 12.2175 9.47293 11.64 10.0504L6.74999 14.9404" stroke="#9E9B9B" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
